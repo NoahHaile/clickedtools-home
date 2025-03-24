@@ -957,20 +957,11 @@ export default function LandingPage() {
                             <h3 className="font-medium text-lg mb-4">Legal</h3>
                             <ul className="space-y-2">
                                 <li>
-                                    <Link to="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                                    <Link to="https://www.privacypolicies.com/live/eca32a20-b289-4a60-86f8-7dde3a81b369" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                                         Privacy Policy
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link to="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                                        Terms of Service
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                                        Cookie Policy
-                                    </Link>
-                                </li>
+                                
                             </ul>
                         </motion.div>
                     </motion.div>
@@ -985,14 +976,8 @@ export default function LandingPage() {
                             &copy; 2025 ClickedTools. All rights reserved.
                         </p>
                         <div className="flex gap-4 mt-4 sm:mt-0">
-                            <Link to="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">
+                            <Link to="https://www.privacypolicies.com/live/eca32a20-b289-4a60-86f8-7dde3a81b369" className="text-xs text-muted-foreground hover:text-primary transition-colors">
                                 Privacy
-                            </Link>
-                            <Link to="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">
-                                Terms
-                            </Link>
-                            <Link to="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">
-                                Cookies
                             </Link>
                         </div>
                     </motion.div>
