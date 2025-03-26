@@ -3,8 +3,8 @@ import LandingPage from "~/components/LandingPage";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "ClickedTools" },
+    { name: "Enhancing educational experiences across the web", content: "Welcome to ClickedTools!" },
   ];
 };
 
