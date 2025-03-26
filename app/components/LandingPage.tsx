@@ -228,7 +228,7 @@ export default function LandingPage() {
                                 </motion.div>
                             </motion.div>
                             <motion.div
-                                className="hidden md:flex items-center justify-center"
+                                className="hidden md:flex items-center justify-center relative w-full max-w-md aspect-[10/6]"
                                 initial={{ opacity: 0, scale: 0.8, rotate: 10 }}
                                 animate={{ opacity: 1, scale: 1, rotate: 3 }}
                                 transition={{
@@ -237,10 +237,39 @@ export default function LandingPage() {
                                     stiffness: 100,
                                 }}
                             >
-                                <div className="relative w-full max-w-md aspect-[8/6] rounded-lg overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
-                                    <img src="/MagazineWhite.png" alt="Magazine preview" className="object-cover w-full h-full" />
-                                </div>
+                                {/* Background Image with Unique Rotation and Hover Effects */}
+                                <motion.img
+                                    src="/Magazine.png"
+                                    alt="Magazine Screenshot 2"
+                                    className="absolute top-0 right-0 w-full h-full object-cover rounded-lg shadow-2xl z-0"
+                                    initial={{ rotate: -10, y: 120, x: -10 , scale: 0.9 }}
+                                    whileHover={{
+                                        y: 150,
+                                        rotate: -2,
+                                        scale: 0.91,
+                                        filter: "brightness(1.1)",
+                                    }}
+                                    transition={{ duration: 0.5, ease: "easeOut" }}
+                                />
+
+                                <motion.img
+                                    src="/MagazineWhite.png"
+                                    alt="Magazine Screenshot 1"
+                                    className="absolute top-0 right-0 w-full h-full object-cover rounded-lg shadow-2xl z-0"
+                                    initial={{ rotate: -5  }}
+                                    whileHover={{
+                                        rotate: 2,
+                                        scale: 1.05,
+                                        filter: "brightness(1.1)",
+                                        
+                                    }}
+                                    transition={{ duration: 0.5, ease: "easeOut" }}
+                                />
+
+                            
                             </motion.div>
+
+
                         </div>
                     </div>
                 </section>
@@ -961,7 +990,7 @@ export default function LandingPage() {
                                         Privacy Policy
                                     </Link>
                                 </li>
-                                
+
                             </ul>
                         </motion.div>
                     </motion.div>
